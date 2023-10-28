@@ -1,0 +1,121 @@
+.Login-container-div{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bglight);
+    transform-origin: right;
+    animation: container 0.5s ease forwards;
+}
+@keyframes container {
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+    
+}
+
+.Login-Form{
+    height: 100vh;
+    max-height: 400px;
+    width: 90vw;
+    max-width: 400px;
+    background-color: var(--bgwhite);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform-origin: left;
+    animation: openForm 0.6s 0.5s forwards;
+    transform: scaleX(0);
+}
+.Password{
+    position: relative;
+    width: 100%;
+}
+.Password input{
+    width: 100%;
+}
+
+.Password button{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+@keyframes openForm {
+    from{
+transform: scaleX(0);
+    }to{
+transform: scaleX(1);
+    }
+    
+}
+.LoginHeading{
+    font-size: 40px;
+    font-family: 'Gilroy-Semibold', sans-serif;
+}
+.Form{
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: cursive;
+}
+.Form-input{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 24px;
+    padding: 10px 0;
+}
+.Form-input input{
+    border:2px solid var(--textlight);
+    border-radius: 5px;
+    height: 30px;
+    font-size: 16px;
+    padding: 3px 0;
+    font-family: cursive;
+
+}
+.notUser{
+    text-align: right;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0 0 0;
+
+}
+.Form-Password{
+    padding: 0px 0 0 0;
+}
+.Signin{
+    border:2px solid #0EC297;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 3px 0;
+    font-weight: bold;
+    background-color: #0EC297;
+    color: var(--bgwhite);
+    cursor: pointer;
+    font-family: cursive;
+    transition: all 0.3s ease;
+}
+.Signin:disabled{
+    background-color: #88C2BB;
+    border-color: #88C2BB;
+}
+.Signin:hover{
+    background-color: #0fe4b2;
+    box-shadow: 2px 2px 20px 1px #0fe4b2;
+    border-color: #0fe4b2;
+}

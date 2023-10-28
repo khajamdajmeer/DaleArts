@@ -3,11 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import WebFont from 'webfontloader';
+import { BrowserRouter } from 'react-router-dom';
+
+WebFont.load(
+  {
+  typekit:{
+    id:'1820e382f31c77d581ee55e9f9fb7394e6fa185e',
+  },
+  active:function(){
+    console.log('iam loading')
+    ReactDOM.render(<App/>,document.getElementById('root'))
+  }
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
     <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
