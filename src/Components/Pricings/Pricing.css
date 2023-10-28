@@ -1,0 +1,49 @@
+.pricing-contianer{
+    overflow-y: auto;
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.pricing-contianer::-webkit-scrollbar{
+    display: none;
+    height: 6px;
+}
+.pricing-contianer::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: var(--textlight);
+}
+.pricing-post{
+    width: 252px;
+    height: auto;
+    white-space: nowrap;
+    margin-right: 20px;
+}
+.container{
+    width: 100%;
+}
+.pricingimg{
+    width: 252px;
+    height: 180px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+}
+.pricing-post h4{
+    text-transform: capitalize;
+    font-size: 13px;
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    margin-bottom: 16px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+.pricing-value{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 24px;
+}
+.pricig-star{
+    display: flex;
+}
+.pricig-star img{
+    margin-right: 4px;
+}

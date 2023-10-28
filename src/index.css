@@ -8,10 +8,47 @@
   --textlight:#8D8D8D;
   --textdark:#101010;
   --border:#F3F3F3;
+  --primarylight:#88C2BB;
+  --primarydark:#0EC297;
 }
 
 
 @font-face {
   font-family: 'Gilroy-Light';
-  src: local('Gilroy-Light'), url(./fonts/Gilroy-Light.otf) format('truetype');
+  src: local('Gilroy-Light'), url(./fonts/Gilroy-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: local('Gilroy-Bold'), url(./fonts/Gilroy-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: local('Gilroy-SemiBold'), url(./fonts/Gilroy-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: local('Gilroy-Regular'), url(./fonts/Gilroy-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gilroy-Heavy';
+  src: local('Gilroy-Heavy'), url(./fonts/Gilroy-Heavy.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: local('Gilroy-Medium'), url(./fonts/Gilroy-Medium.ttf) format('truetype');
+}
+
+body{
+  overflow-x: hidden;
+  background-color: var(--bglight);
+}
+::-webkit-scrollbar{
+  width: 8px;
+  background-color: var(--bglight);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #10101046;
+  border-radius: 20px;
 }

@@ -1,0 +1,131 @@
+.Home-FullScreen-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bglight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Home-container{
+    width: 100%;
+   width: 1600px;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.container-grid{
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 260px 620px 260px;
+}
+.grid-item{
+    background-color: var(--bgwhite);
+    border-radius: 10px;
+}
+.grid-top{
+    height: 80px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.grid-bottom{
+    height: 650px;
+}
+.grid-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+.grid-2{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+.searchinput{
+    width: 80%;
+    border: none;
+    height: 100%;
+    padding: 0 5px;
+    outline: none;
+}
+.filter-btn{
+    display: flex;
+    align-items: center;
+    border: none;
+    background:none;
+    font-size: 14px;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: bolder;
+    color: #303030;
+}
+.searchinput::-moz-selection{
+    border: none;
+}
+.grid-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.become-seller-btn{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: bold;
+background-color: var(--primarylight);
+border: navajowhite;
+border-radius: 10px;
+color: var(--bgwhite);
+}
+
+.menu-list{
+    margin: 34px 0;
+    width: 100%;
+    list-style: none;
+}
+.list-item{
+    height: 32px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+.list-btn{
+    width: 100%;
+    padding-left: 36px;
+    height: 100%;
+    border: none;
+    background: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    color: var(--textlight);
+}
+.list-btn:hover{
+    color: var(--textdark);
+}
+.listicons{
+    margin-right: 18px;
+}
+.btn-logout{
+    height: 32px;
+    margin-bottom: 32px;
+    color: var(--primarylight);
+}
+.btn-logout:hover{
+    color: var(--primarydark);
+}
+.grid-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.grid-5{
+    overflow-y: auto;
+    background-color: var(--bglight);
+    border-radius: 0;
+}
+.grid-5::-webkit-scrollbar{
+    display: none;
+}
