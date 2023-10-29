@@ -86,3 +86,20 @@
     margin-right: 18px;
 
 }
+
+
+
+@media (max-width:1225px) {
+    
+    .post-img img{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media (max-width:550px) {
+  .post-container{
+    padding: 15px;
+  }  
+}

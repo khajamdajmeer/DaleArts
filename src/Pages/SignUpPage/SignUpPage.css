@@ -42,7 +42,8 @@
     
 }
 .signup-heading{
-    font-family: 'Gilroy-Semibold', sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+
 }
 .form-input{
     display: flex;
@@ -50,7 +51,8 @@
     width: 80%;
     font-size: 16px;
     padding: 6px 0;
-    font-family: cursive;
+    font-family: 'Gilroy-Bold', sans-serif;
+
 }
 .form-input input{
     border:2px solid var(--textlight);

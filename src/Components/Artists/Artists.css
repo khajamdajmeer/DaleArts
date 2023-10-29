@@ -1,0 +1,49 @@
+.Artist-container{
+    height: 126px;
+    width: 244px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+.artist-backgoround{
+    height: inherit;
+    width: inherit;
+    border-radius: 10px;
+    opacity: 0.95;
+}
+.artist-profile{
+ height: 48px;
+ width: 100%;   
+ position: absolute;
+ display: flex;
+ align-items: center;
+ bottom: 14px;
+}
+.artist-img{
+    height: inherit;
+margin-left: 14px;
+}
+.artist-info{
+    margin-left: 15px;
+
+
+}
+.artist-info h3{
+    font-size: 16px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    color: var(--bgwhite);
+    margin-bottom: 7px;
+}
+.artist-info h5{
+    font-size: 12px;
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    color: var(--bgwhite);
+
+}
+
+@media (max-width:930px) {
+    .Artist-container{
+        margin: 10px;
+    }
+    
+}

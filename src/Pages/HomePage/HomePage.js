@@ -16,6 +16,7 @@ import settingicon from '../../Resources/icons/setting.svg';
 import logouticon from '../../Resources/icons/logout.svg';
 import Post from '../../Components/Post/Post';
 import Pricing from '../../Components/Pricings/Pricing';
+import Artists from '../../Components/Artists/Artists';
 
 const HomePage = () => {
 
@@ -46,13 +47,33 @@ const HomePage = () => {
       });
   };
 
+  const handleHamMenu = ()=>{
+    const menuitem = document.getElementById('Menu');
+    if(menuitem){
+      if(menuitem.style.display==='none'){
+        menuitem.style.display='block'
+      }
+      else{
+        menuitem.style.display='none'
+      }
+    }
+  }
+
 
   return (
     <>
       <div className="Home-FullScreen-container">
         <div className="Home-container">
           <div className="container-grid">
-            <div className="grid-item grid-top grid-1">LOGO</div>
+            <div className="grid-item grid-top grid-1"><button className='responsiv-artistbtn'>
+            <span class="material-symbols-outlined">
+chevron_right
+</span>
+              </button>DALE ARTS<button className='responsive-menubtn' onClick={handleHamMenu}>
+              <span class="material-symbols-outlined">
+menu
+</span>
+                </button></div>
             <div className="grid-item grid-top grid-2">
               <img src={Searchicon} alt="" />
               <input className='searchinput' type="text" placeholder='search' />
@@ -64,7 +85,7 @@ const HomePage = () => {
             <div className="grid-item grid-top grid-3">
               <button className="become-seller-btn">Become a Seller</button>
             </div>
-            <div className="grid-item grid-bottom grid-4">
+            <div className="grid-item grid-bottom grid-4" id='Menu'>
               <ul className="menu-list">
                 <li className="list-item">
                   <button className='list-btn'><img src={homeicon} className='listicons' alt="" />Home</button>
@@ -95,12 +116,19 @@ const HomePage = () => {
             </div>
             <div className="grid-item grid-bottom grid-5">
               <Post/>
-              <Post/>
-              <Post/>
-              <Post/>
               <Pricing/>
             </div>
-            <div className="grid-item grid-bottom">6</div>
+            <div className="grid-item grid-bottom grid-6">
+
+            <div className="grid-6-heading">
+              <button className='btn-artist'>Artists</button>
+              <button>Photographers</button>
+             </div>
+          <div className="grid-6-overflow">
+            <Artists/>
+            <Artists/>
+          </div>
+            </div>
           </div>
         </div>
       </div>
